@@ -9,12 +9,12 @@ snake[0] = {
 
 function criarBG(){
     context.fillStyle = "lightgreen";
-    context.filRect(0, 0, 16 * box, 16 * box);
+    context.fillRect(0, 0, 16 * box, 16 * box);
 }
 function criarCobrinha(){
     for(i=0; i < snake.length; i++){
         context.fillStyle = "green"
-        context.filRect(snake[i].x, snake[i].y, box, box);
+        context.fillRect(snake[i].x, snake[i].y, box, box);
     }
 }
 criarBG();
